@@ -9,15 +9,13 @@ def filter_by_age(users):
     """Filter users by age"""
     filtered_users = []
     for user in users:
-        age = user["age"]
-        print(f"Name: {user['name']}, Age: {age}")
+        print(f"Name: {user['name']}, Age: {user["age"]}")
 
 def filter_by_email(users):
     """Filter users by email"""
     filtered_users = []
     for user in users:
-        email = user["email"]
-        print(f"Name: {user['name']}, Email: {email}")
+        print(f"Name: {user['name']}, Email: {user["email"]}")
 
 if __name__ == "__main__":
     users = load_users()
